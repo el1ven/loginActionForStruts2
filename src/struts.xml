@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="strut2" namespace="/" extends="struts-default">
+        <action name="login" class="LoginAction"><!--class名字要和action实现类的名字相同 -->
+            <!--LoginAction实现类的execute函数会返回一个string,这里设置相应的跳转页面-->
+            <result name="success">/success.jsp</result>
+            <result name="fail">/error.jsp</result>
+        </action>
+    </package>
+</struts>
